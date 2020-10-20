@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TipCalculator {
@@ -22,7 +23,7 @@ public class TipCalculator {
         double dinnerPrice = scanner.nextDouble(); // Customer input for dinner price
         double[] tips = {0.15, 0.20, 0.25}; // Storing tip rates in array
 
-        for (int i = 0; i < 10; i++) {  //purpose of printing 10 times
+        for (int i = 0; i < 10; i++) {  // purpose of printing 10 times
             System.out.print("$ " + String.format("%.2f", dinnerPrice));
             for (double tip : tips) { // foreach loop
                 System.out.print(" \t" + "$ " + String.format("%5s", String.format("%.2f", dinnerPrice * tip))); // calculating tip amount

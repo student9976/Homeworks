@@ -47,14 +47,15 @@ public class FinPlanner {
 
         //print statement for headlines "year" and "Investment Value" 
         System.out.println("*************************************");
-        System.out.println("Year" + "\t" + "Investment Value");
+        System.out.println("Year" + "\t" + "Investment Value \n");
 
-        //using the for loop to declare the year, time period and calculation of initial investment amount, annnual rate of return and the annual deposit amount.//
-
+        /*using the for loop to declare the year,
+        time period and calculation of initial investment amount,
+        annual rate of return and the annual deposit amount.
+        */
         for (int timePeriod = 1; timePeriod <= 15; timePeriod++) {
             compoundInterest = yearlyTotalAmount * (interestRate / 100) + yearlyTotalAmount;
 
-            System.out.println("");
             String strDouble = String.format("%.2f", compoundInterest);
 
             System.out.println(timePeriod + "\t\t" + "$" + strDouble);
