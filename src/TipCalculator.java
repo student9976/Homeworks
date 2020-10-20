@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class TipCalculator {
     public static void main(String[] args) {
         /*
+            @author CnR
             Base dinner price is $10.00
             Customer will input dinner price
             Tip rates are fixed to %15, %20, %25
